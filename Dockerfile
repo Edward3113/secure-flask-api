@@ -1,5 +1,5 @@
 # Pin to a specific minor version for reproducible, scannable builds.
-FROM python:3.12-slim
+FROM python:3.14-slim
 
 # Avoid interactive prompts and reduce image cruft.
 ENV PYTHONDONTWRITEBYTECODE=1 \
