@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # Keep Python dependencies patched against known vulnerabilities.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Keep the GitHub Actions themselves up to date (pinned-action hygiene).
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Keep the base container image current.
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
